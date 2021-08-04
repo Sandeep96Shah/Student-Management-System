@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+/* Sign Up Component */
+.signup_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup_inputs{
+  height: 60vh;
+  width: 70vw;
+}

@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+  /* Sign Up/In Component */
+.user_outer_container{
+      width: 100vw;
+      height: 84vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.user_container{
+      height: auto;
+      width: 30vw;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+        border-radius: 10px;
+    padding: 10px;
+    background-color: teal;
+    box-shadow: 0px 0px 10px 5px grey;
+}
+.user_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+.user_form{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+}
+.user_form form{
+display: flex;
+flex-direction: column;
+}
+.user_form form input{
+height: 40px;
+padding-left: 15px;
+font-size: 20px;
+outline: none;
+border-radius: 10px;
+font-style: oblique;
+margin-bottom: 15px;
+}
+.user_form form textarea{
+    height: auto;
+    padding-left: 15px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+    font-style: oblique;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+input[type=submit]{
+    background-color: #132dcc;
+    cursor: pointer;
+}
+/* navbar Component */
+.navbar{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7vw;
+    background-color: blue;
+}
+/* do change here to put a company logo */
+.company_logo{
+    height: 90%;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url('./images/logo.jpg');
+    background-size: contain;
+    cursor: pointer;
+}
+.user{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user_nav{
+    height: 40px;
+    width: 90px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* FrontPage Component */
+.front_page{
+    height: 84vh;
+    width: 100vw;
+    background: url('./images/school.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Teacher Component */
+
+.teacher_container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: floralwhite;
+}
+.teacher_container h1{
+    padding-top: 20px;
+    text-align: center;
+}
+.teacher_assignment{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+}
+.assignment_outer_container{
+    width: 70%;
+    overflow: hidden;
+    border: 2px solid black;
+    background-color: teal;
+    border-radius: 20px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px 5px grey;
+}
+.assignment_outer_container h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+.assignment_container{
+    width: 103%;
+    height: 52vh;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+}
+.assignment_div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    background-color: white;
+    color: grey;
+    font-family: cursive;
+    box-shadow: 0px 0px 10px 7px grey inset;
+}
+.assignment{
+    display: flex;
+    margin-bottom: 10px;
+}
+.assignment_title{
+    width: 20%;
+}
+.assignment_ans{
+    width: 80%;
+}
+.assignment_form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.assignment_form_container{
+    height: auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: teal;
+    box-shadow: 0px 0px 10px 5px grey;
+    margin-top: 20px;
+}
