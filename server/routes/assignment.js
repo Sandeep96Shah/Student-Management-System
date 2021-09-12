@@ -6,6 +6,12 @@ const router = express.Router();
 
 const assignmentController = require('../controllers/assignment');
 
-router.post('/', passport.authenticate('jwt', {session:false}) ,assignmentController.create);
+//todo later create the routes to access all the assignments of teacher!
+router.get('/allAssignment', assignmentController.allAssignments);
+
+router.post('/updateAssignment', assignmentController.assignmentEvaluated);
+
+//passport.authenticate('jwt', {session:false})
+router.post('/' ,assignmentController.create);
 
 module.exports = router;

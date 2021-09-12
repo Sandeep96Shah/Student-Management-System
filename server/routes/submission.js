@@ -9,6 +9,9 @@ const submissionController = require('../controllers/submission');
 
 const upload = multer({dest:'uploads/studens'});
 
-router.post('/', passport.authenticate('jwt', {session:false}) ,upload.single('file'), submissionController.create);
+router.get('/allAssignment', submissionController.allAssignment);
+
+//passport.authenticate('jwt', {session:false}) ,
+router.post('/', upload.single('file'), submissionController.create);
 
 module.exports = router;

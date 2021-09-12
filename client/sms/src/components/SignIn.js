@@ -29,6 +29,7 @@ const SubmitAssignment = ({title, role}) => {
                     />
                     <div className={styles.submit_container}>
                     {
+                        //change this when reducer is implemented
                         role == "teacher" ? 
                             <Link to="/teacher">
                                 <input 
