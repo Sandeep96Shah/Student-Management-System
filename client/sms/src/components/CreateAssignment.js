@@ -1,44 +1,43 @@
-import React, { Component } from 'react'
-import styles from '../styles.module.css';
+import React from 'react'
+import styles from '../createAssignment.module.css';
 
-class CreateAssignment extends Component {
-    render() {
-        return (
-            <div className={styles.assignment_form}>
-                    <div className={styles.assignment_form_container}>
-                        <div className={styles.user_header}>
-                            <h1>Create Assignment</h1>
-                        </div>
-                        <div className={styles.user_form}>
-                            <form>
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Subject"
-                                />
-
-                                <textarea
-                                    rows="3"
-                                    name="description"
-                                    placeholder="Description"
-                                ></textarea>
-
-                                <input
-                                    type="text"
-                                    name="deadLine"
-                                    placeholder="DeadLine"
-                                />
-                                <input 
-                                    type="submit"
-                                    id="submit"
-                                    value="Submit"
-                                />
-                            </form>
-                        </div>
+const CreateAssignment = ({title}) => {
+    return (
+        <div className={styles.create_assignment}>
+            <div className={styles.header}>
+                <h1>{title}</h1>
+            </div>
+            <div className={styles.form_outer}>
+                <form className={styles.form_container}>
+                    <label htmlFor="subject" className={styles.label_field}>Subject</label>
+                    <input 
+                        type="text"
+                        name="subject"
+                        className={styles.input_field}
+                    />
+                    <label htmlFor="description" className={styles.label_field}>Description</label>
+                    <textarea
+                        rows="3"
+                        name="description"
+                        className={styles.textarea_field}
+                    ></textarea>
+                    <label htmlFor="deadLine" className={styles.label_field}>DeadLine</label>
+                    <input 
+                        type="date"
+                        name="deadLine"
+                        className={styles.input_field}
+                    />
+                    <div className={styles.submit_container}>
+                    <input 
+                        type="submit"
+                        value="Submit"
+                        className={styles.input_field}
+                    />
                     </div>
-                </div>
-        )
-    }
+                </form>
+            </div>
+        </div>
+    )
 }
 
-export default CreateAssignment
+export default CreateAssignment;
